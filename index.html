@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Lesson 27</title>
+</head>
+
+<body>
+  <h1>Завдання до уроку 24:</h1>
+  <hr>
+  <h2>Мінімум</h2>
+  <hr>
+  <ol>
+    <li><span class="question">Напиши всі можливі варіанти створення функцій.</span>
+      <ul>
+        <li>
+          <span>Оголошення функції:</span>
+          <pre>
+            <code>
+              function namefunction (p1,p2)
+              {
+              body function;
+              }
+            </code>
+          </pre>
+        </li>
+        <li>
+          <span>Вираз функції:</span>
+          <pre>
+            <code>
+              let func=function namefunction ()
+              {
+              body function;
+              }
+            </code>
+          </pre>
+        </li>
+        <li>
+          <span>Вираз стрілкової функції:</span>
+          <pre>
+            <code>let func = (p1, p2) =&gt; p1+p2;</code>
+          </pre>
+        </li>
+      </ul>
+    </li>
+    <li><span class="question">Створи функцію, яка буде виводити кількість переданих їй аргументів.</span>
+      <br>
+      <pre>
+        <code>
+          function countArgs(...args) {
+            console.log(args.length);
+          }
+        </code>
+      </pre>
+      <button onclick="countArgs(1, 2, 3, 4);">Виконати</button>
+    </li>
+    <li><span class="question">
+      Напиши функцію, яка приймає 2 числа і повертає :
+        -1, якщо перше число менше, ніж друге;
+        1 - якщо перше число більше, ніж друге;
+        0 - якщо числа рівні.
+    </span>
+      <button onclick="compareNumbers()">Виконати</button>
+    </li>
+    <li><span class="question">Напиши функцію, яка обчислює факторіал переданого їй числа.</span>
+      <button onclick="factorial()">Виконати</button>
+    </li>
+    <li><span class="question">Напиши функцію, яка приймає три окремі цифри і перетворює їх в одне число. Наприклад: цифри 1, 4, 9 перетворяться в число 149.</span>
+      <pre>
+        <code>
+          function combineDigits(a, b, c) {
+            return Number(`${a}${b}${c}`);
+          }
+        </code>
+      </pre>
+      <button onclick="console.log(combineDigits(1, 4, 9))">Виконати</button>
+      <span>(Відповідь в консолі)</span>
+    </li>
+    <li><span class="question">
+      Напиши функцію, яка приймає довжину і ширину прямокутника і обчислює його площу. Якщо в функцію передали 1
+        параметр, то вона обчислює площу квадрата.
+    </span>
+      <pre>
+        <code>
+          function calculateArea(length, width = length) {
+            let area = length * width;
+            alert(`Площа прямокутника із сторонами ${length} і ${width} довівнює ${area}`);
+            }
+          </code>
+        </pre>
+      <button onclick="calculateArea(2,5)">Виконати</button>
+    </li>
+    <hr>
+  </ol>
+
+  <h2>Норма</h2>
+
+  <ol>
+    <hr>
+    <li><span class="question">
+      Напиши функцію, яка перевіряє, чи є передане їй число “досконалим числом”. Досконале число - це число, яке
+        дорівнює сумі всіх своїх дільників.
+    </span>
+      <button onclick="perfectNumber()">Виконати</button>
+    </li>
+    <li>
+      <span class="question">
+        Напиши функцію, яка приймає мінімальне і максимальне значення для діапазону, і виводить тільки ті числа з
+        діапазону, які є досконалими. Використовуй написану раніше функцію, щоб дізнатися, чи є це число досконалим.
+      </span>
+      <button onclick="findPerfectNumbers()">Виконати</button>
+    </li>
+  </ol>
+</body>
+
+</html>

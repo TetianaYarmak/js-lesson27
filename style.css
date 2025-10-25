@@ -1,0 +1,87 @@
+/* Загальні стилі */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.6;
+  text-align: center; 
+  max-width: 80%;
+}
+
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+ol, ul {
+  list-style-position: inside; 
+  padding-left: 0;
+  margin: 0 auto;
+  display: block;
+  text-align: center; 
+}
+
+.question, ol>li::marker  {
+  font-weight: bold;
+  color: rgb(34, 153, 88);
+}
+
+li {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+pre {
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  overflow-x: auto;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  color: #2c3e50;
+}
+
+button {
+  background-color: #34db90;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  margin-inline: auto;
+}
+
+button:hover {
+  background-color: #307d5a;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #bdc3c7;
+  margin: 20px auto;
+  width: 80%;
+}
